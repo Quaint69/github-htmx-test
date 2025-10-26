@@ -6,13 +6,12 @@
     <title>HTMX API Test</title>
     <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.8/dist/htmx.min.js"></script>
 <body>
-    <h1>Test API Health Check</h1>
+    <h1>Test Check</h1>
     <button hx-get="https://test-express-js-on-vercel-iota.vercel.app/test1"
             hx-target="#result"
-            hx-swap="innerHTML"
-            hx-on:htmx:error="this.innerHTML = 'Error loading content'">
+            hx-swap="innerHTML">
         Test API
     </button>
-    <div id="result"></div>
+    <div id="result">here</div>
 </body>
 </html>
