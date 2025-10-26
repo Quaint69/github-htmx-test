@@ -8,9 +8,10 @@
 </head>
 <body>
     <h1>Test Check</h1>
-    <button hx-get="https://test-express-js-on-vercel-pu2qa3nr8-quaint69s-projects.vercel.app/test1"
+    <button type="button" hx-get="https://test-express-js-on-vercel-pu2qa3nr8-quaint69s-projects.vercel.app/test1"
             hx-target="#result"
-            hx-swap="innerHTML">
+            hx-swap="innerHTML"
+            hx-vals='{"Authorization": "Bearer ZPkc8gYzNEytseWTosVNqQW4"}'>
         Test API
     </button>
     <div id="result">here</div>
