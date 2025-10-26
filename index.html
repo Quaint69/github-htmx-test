@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTMX API Test</title>
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+</head>
+<body>
+    <h1>Test API Health Check</h1>
+    <button hx-get="https://test-express-js-on-vercel-iota.vercel.app/healthz"
+            hx-target="#result"
+            hx-swap="innerHTML">
+        Test API
+    </button>
+    <div id="result"></div>
+</body>
+</html>
