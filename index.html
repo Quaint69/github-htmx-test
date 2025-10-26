@@ -9,7 +9,8 @@
     <h1>Test API Health Check</h1>
     <button hx-get="https://lacerant-kam-overbulkily.ngrok-free.dev/login.php"
             hx-target="#result"
-            hx-swap="innerHTML">
+            hx-swap="innerHTML"
+            hx-on:htmx:error="this.innerHTML = 'Error loading content'">
         Test API
     </button>
     <div id="result"></div>
