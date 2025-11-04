@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTMX API Test</title>
-    <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.8/dist/htmx.min.js"></script>
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
 </head>
 <body>
     <h1>Test Check</h1>
-    <button type="button" hx-get="https://test-express-js-on-vercel-iota.vercel.app/test1"
+    <button hx-get="https://test-express-js-on-vercel-iota.vercel.app/test1"
             hx-target="#result"
-            hx-swap="innerHTML"
-            hx-vals='{"Authorization": "Bearer ZPkc8gYzNEytseWTosVNqQW4"}'>
+            hx-swap="outerHTML"
+            >
         Test API
     </button>
-    <div id="result">here</div>
+    <div id="result"></div>
 </body>
 </html>
